@@ -21,7 +21,7 @@ class Mediator : public AbstractMediator
 public:
 	void Register(Transport* transport)	
 	{
-		auto res = transports.find(transport->GetName());	
+		auto res = transports.find(transport->GetName());		
 		if (res == transports.end())	
 		{
 			transports[transport->GetName()] = transport;
